@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Travelo</string>
+    <string name="welcome">Welcome you </string>
+    <string name="slogan">Discover the best ride for you </string>
 </resources>
