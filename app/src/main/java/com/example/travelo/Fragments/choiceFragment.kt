@@ -14,6 +14,9 @@ class choiceFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+
+        //hiding support action bar
+
         // Inflate the layout for this fragment
 
         return inflater.inflate(R.layout.fragment_choice, container, false)
