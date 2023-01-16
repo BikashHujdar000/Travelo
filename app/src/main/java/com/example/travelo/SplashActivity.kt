@@ -36,7 +36,7 @@ class SplashActivity : AppCompatActivity() {
                 Runnable {
 
                     startActivity(Intent(this, MainActivity::class.java))
-                }, 8000
+                }, 2000
             )
         }
     }
