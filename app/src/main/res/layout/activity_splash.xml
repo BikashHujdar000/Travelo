@@ -25,11 +25,12 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginTop="108dp"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/croppedlogo" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
