@@ -1,125 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.BusOwnerLoginFragment">
-    <LinearLayout
+    tools:context=".Fragments.UserLoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/black"
+            android:text="Let's login"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:text="@string/busownerTExt"
+            app:layout_constraintEnd_toEndOf="@+id/text_login"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/text_login"
+            app:layout_constraintTop_toBottomOf="@id/text_login" />
 
         <LinearLayout
+            android:id="@+id/boxlinearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_margin="60dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.641"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
 
 
             <EditText
-                android:id="@+id/et_name"
+                android:layout_marginTop="20dp"
+                android:id="@+id/edit_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="18dp"
-                android:drawableEnd="@drawable/ic_user"
-                android:hint="Name"
-                android:paddingStart="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:paddingEnd="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/black" />
-
-            <EditText
-                android:id="@+id/et_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="18dp"
-                android:fontFamily="@font/poppins_regular"
-                android:drawableEnd="@drawable/ic_email"
-                android:hint="email"
+                android:drawableLeft="@drawable/email24"
+                android:drawablePadding="20dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"
-                android:paddingStart="10dp"
-                android:paddingEnd="8dp"
-                android:textColor="@color/black" />
+                android:minHeight="48dp"
+                android:theme="@style/MyEditTextTheme" />
 
             <EditText
-                android:id="@+id/et_password"
+                android:id="@+id/edit_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="18dp"
-                android:drawableEnd="@drawable/ic_password"
-                android:hint="password"
+                android:drawableLeft="@drawable/password_lock"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/lock_hint"
                 android:inputType="textPassword"
-                android:paddingStart="10dp"
-                android:paddingEnd="8dp"
-                android:textColor="@color/black" />
-            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:theme="@style/MyEditTextTheme" />
+
+            <TextView
+                android:id="@+id/signIn_button"
+                android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="18dp"
-                android:orientation="horizontal">
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Remember  me"/>
-                <TextView
-                    android:id="@+id/tv_forget_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:textColor="@color/purple_500"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Forget Password"/>
-
-            </LinearLayout>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/bottom_background"
                 android:backgroundTint="@color/theme1"
-                android:text="Login" />
+                android:elevation="10dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/signIn"
+                android:textColor="@color/white"
+                android:textSize="25dp"
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
+                />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/black"
+                android:drawableEnd="@drawable/email24"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_marginStart="80dp"
+                android:textSize="15dp"
+                android:text="Contact us"
                 android:textColor="@color/black"
-                android:text="Don't have account ? " />
-            <TextView
-                android:id="@+id/tv_signin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="create account"
-                android:textSize="15sp"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/purple_500"/>
-        </LinearLayout>
-    </LinearLayout>
+                android:theme="@style/MyEditTextTheme"
+                android:textStyle="bold"
+                android:fontFamily="@font/medium"
+                android:id="@+id/contact"/>
 
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

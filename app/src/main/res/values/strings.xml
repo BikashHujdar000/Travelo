@@ -17,8 +17,9 @@
     <string name="hint_email">hujdarbikash000@gmail.com</string>
     <string name="hint_phone">+9779810209126</string>
     <string name="lock_hint">Type Password</string>
-    <string name="agreement">By creating an account you agree to our Terms and Service "</string>
+    <string name="agreement">By creating an account you agree to our Terms and Condition "</string>
     <string name="signUp">SIGN UP</string>
     <string name="signIn">SIGN IN</string>
+    <string name="busownerTExt">Start sharing your bus information for Travellers</string>
 
 </resources>
