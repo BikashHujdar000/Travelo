@@ -17,7 +17,7 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="MyEditTextTheme">
-        <item name="colorControlNormal">#4C4646</item>
+        <item name="colorControlNormal">#D5CBCB</item>
         <item name="colorControlActivated">@color/theme1</item>
         <item name="colorControlHighlight">#FF1744</item>
     </style>

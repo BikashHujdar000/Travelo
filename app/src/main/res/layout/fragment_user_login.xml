@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/bottom_background"
-                android:backgroundTint="@color/teal_200"
+                android:backgroundTint="@color/theme1"
                 android:elevation="10dp"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
@@ -100,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
                 android:text="Forgot Password ?"
+                android:theme="@style/MyEditTextTheme"
                 android:textStyle="bold"
                 android:fontFamily="@font/medium"
                 android:id="@+id/forgot_password"/>
