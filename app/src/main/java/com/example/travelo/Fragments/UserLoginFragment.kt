@@ -5,18 +5,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavAction
+import androidx.navigation.Navigation
 import com.example.travelo.R
+import com.example.travelo.databinding.FragmentUserLoginBinding
+import com.example.travelo.databinding.FragmentUserRegisterBinding
 
 
 class UserLoginFragment : Fragment() {
+    lateinit var binding: FragmentUserLoginBinding
+
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_login, container, false)
+
+        binding = FragmentUserLoginBinding.inflate(layoutInflater,container,false)
+
+        binding.signInButton.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_userLoginFragment_to_homeFragment)
+        }
+
+        return binding.root
     }
 
 

@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.travelo.R
+import com.example.travelo.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
+lateinit var  binding: FragmentHomeBinding
 
 
 

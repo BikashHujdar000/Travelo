@@ -17,6 +17,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+
         // hidding atatus bar
         @Suppress("DEPRECATION")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -26,6 +27,7 @@ class SplashActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
+        }
 
             val progressBar = findViewById<View>(R.id.spin) as ProgressBar
             val threeBounce = ThreeBounce()
@@ -36,8 +38,9 @@ class SplashActivity : AppCompatActivity() {
                 Runnable {
 
                     startActivity(Intent(this, MainActivity::class.java))
-                }, 2000
+
+                }, 1000
             )
         }
-    }
+
 }

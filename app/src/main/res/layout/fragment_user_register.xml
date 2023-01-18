@@ -1,115 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/register_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".Fragments.userRegisterFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/register"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light"
+            android:text="@string/register_down"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <LinearLayout
+            android:id="@+id/boxlinearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:fontFamily="@font/poppins_bold"
-                android:gravity="center_horizontal"
-                android:text="Create Account"
-                android:textColor="@color/theme1"
-                android:textSize="35sp" />
+            android:layout_margin="60dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
 
             <EditText
-                android:id="@+id/et_name"
+                android:id="@+id/edit_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="80dp"
-                android:layout_marginEnd="18dp"
-                android:drawableEnd="@drawable/ic_user"
-                android:hint="Name"
-                android:paddingStart="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:paddingEnd="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/black" />
+                android:drawableLeft="@drawable/user24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:theme="@style/MyEditTextTheme"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
 
             <EditText
-                android:id="@+id/et_email"
+                android:id="@+id/edit_email"
+                android:theme="@style/MyEditTextTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="18dp"
-                android:fontFamily="@font/poppins_regular"
-                android:drawableEnd="@drawable/ic_email"
-                android:hint="email"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/email24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="@string/hint_email"
                 android:inputType="textEmailAddress"
-                android:paddingStart="10dp"
-                android:paddingEnd="8dp"
-                android:textColor="@color/black" />
+                android:minHeight="48dp" />
 
             <EditText
-                android:id="@+id/et_password"
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="18dp"
-                android:drawableEnd="@drawable/ic_password"
-                android:hint="password"
-                android:inputType="textPassword"
-                android:paddingStart="10dp"
-                android:paddingEnd="8dp"
-                android:textColor="@color/black" />
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/call24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/hint_phone"
+                android:inputType="phone"
+                android:minHeight="48dp" />
 
-            <Button
-                android:layout_width="wrap_content"
+            <EditText
+                android:theme="@style/MyEditTextTheme"
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:backgroundTint="@color/theme1"
-                android:text="SignUp" />
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/password_lock"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="@string/lock_hint"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/check_Box_linearLayout"
+            android:layout_width="match_parent"
+           android:layout_margin="50dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/boxlinearlayout"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:buttonTint="@color/theme1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/medium"
+                android:text="@string/agreement" />
+
+
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_Box_linearLayout">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_marginStart="100dp"
-                android:text="Already have account ? " />
+                android:id="@+id/signUp_button"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/bottom_background"
+                android:backgroundTint="@color/teal_200"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/signUp"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+
+
             <TextView
-                android:id="@+id/tv_signin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="Sign In"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/theme1"/>
+                android:id="@+id/signIn_button"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/signIn"
+               android:textColor="@color/teal_200"
+                android:textSize="20dp" />
         </LinearLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-</ScrollView>
+</FrameLayout>

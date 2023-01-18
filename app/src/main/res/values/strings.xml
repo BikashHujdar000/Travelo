@@ -5,4 +5,20 @@
     <string name="hello_blank_fragment">blank Fragment</string>
     <string name="welcome">Welcome to Travelo</string>
     <string name="developer">Developed by Team \n Bloopers</string>
+    <string name="register"> Get Registered </string>
+    <string name="login">Lets Login</string>
+    <string name="login_down">Start availing the best route for you </string>
+    <string name="register_down">Sign up now and discover the best ride</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">PhoneNumber</string>
+    <string name="hint_name">Bikash Hujdar</string>
+    <string name="hint_email">hujdarbikash000@gmail.com</string>
+    <string name="hint_phone">+9779810209126</string>
+    <string name="lock_hint">Type Password</string>
+    <string name="agreement">By creating an account you agree to our Terms and Service "</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="signIn">SIGN IN</string>
+
 </resources>
