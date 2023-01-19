@@ -15,10 +15,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+
+
+
     </style>
     <style name="MyEditTextTheme">
         <item name="colorControlNormal">#D5CBCB</item>
-        <item name="colorControlActivated">@color/theme1</item>
-        <item name="colorControlHighlight">#FF1744</item>
+        <item name="colorControlActivated">@color/purple_200</item>
+        <item name="colorControlHighlight">@color/purple_200</item>
     </style>
 </resources>

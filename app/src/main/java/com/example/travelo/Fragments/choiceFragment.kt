@@ -27,7 +27,7 @@ class choiceFragment : Fragment() {
 
         // Inflate the layout for this fragment
         binding.user.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_choiceFragment_to_userRegisterFragment)
+            Navigation.findNavController(it).navigate(R.id.action_choiceFragment_to_userLoginFragment)
         }
         binding.busOwner.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_choiceFragment_to_busOwnerLoginFragment)
