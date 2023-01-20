@@ -19,14 +19,16 @@ lateinit var  binding: FragmentHomeBinding
         savedInstanceState: Bundle?
     ): View? {
         binding= FragmentHomeBinding.inflate(layoutInflater,container,false)
+        //setting Status Bar
+        requireActivity().getWindow().setStatusBarColor(getResources().getColor(R.color.purple_200));
 
-
-        // Inflate the layout for this fragment
         return binding.root
     }
 
 
 }
+
+
 
 
 

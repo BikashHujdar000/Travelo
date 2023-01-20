@@ -13,6 +13,7 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
+
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
@@ -21,7 +22,7 @@
 
     </style>
     <style name="MyEditTextTheme">
-        <item name="colorControlNormal">#D5CBCB</item>
+        <item name="colorControlNormal">#F4EDED</item>
         <item name="colorControlActivated">@color/purple_200</item>
         <item name="colorControlHighlight">@color/purple_200</item>
     </style>
