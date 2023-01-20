@@ -10,7 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:background="@color/purple_200"
+        android:background="@color/theme1"
         android:layout_height="match_parent">
 
 
@@ -100,7 +100,8 @@
                 android:textColor="@color/black"
                 android:theme="@style/MyEditTextTheme"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -123,7 +124,8 @@
                 android:textColor="@color/black"
                 android:theme="@style/MyEditTextTheme"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <LinearLayout
                 android:layout_width="15dp"
@@ -223,6 +225,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/white_view"
             tools:layout_editor_absoluteX="1dp">
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -14,7 +14,7 @@
         android:layout_height="52dp"
         android:layout_centerInParent="true"
         android:layout_marginBottom="4dp"
-        app:SpinKit_Color="@color/purple_200"
+        app:SpinKit_Color="@color/theme1"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.279"
@@ -26,13 +26,15 @@
         android:id="@+id/imageView3"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:background="@drawable/logo"
         android:layout_marginTop="156dp"
         android:scaleType="fitCenter"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+       />
 
     <TextView
         android:id="@+id/textView"

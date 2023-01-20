@@ -110,7 +110,7 @@
 
             <CheckBox
                 android:id="@+id/checkBox"
-                android:buttonTint="@color/purple_200"
+                android:buttonTint="@color/theme1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -137,7 +137,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp"
                 android:background="@drawable/bottom_background"
-                android:backgroundTint="@color/purple_200"
+                android:backgroundTint="@color/theme1"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
                 android:text="@string/signUp"
@@ -155,7 +155,7 @@
                 android:fontFamily="@font/bold"
                 android:gravity="center"
                 android:text="@string/signIn"
-               android:textColor="@color/purple_200"
+               android:textColor="@color/theme1"
                 android:textSize="20dp" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
