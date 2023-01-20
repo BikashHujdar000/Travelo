@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bus_name"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Nepali yatayat"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/route_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.200"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/initial_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:00 am"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <TextView
+        android:id="@+id/departure_time4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:00 am"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <TextView
+        android:id="@+id/start_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dharan"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <TextView
+        android:id="@+id/destination_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaighat"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/initial_location"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/final_state"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="152dp">
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5km" />
+
+        <TextView
+            android:id="@+id/bus_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Direct" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Details" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
