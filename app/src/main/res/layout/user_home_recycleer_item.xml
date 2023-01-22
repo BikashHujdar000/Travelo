@@ -71,7 +71,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textStyle="bold"
-                android:drawableLeft="ini"
                 android:fontFamily="@font/medium"
                 android:text="Rs.200"
                 app:layout_constraintBottom_toBottomOf="@+id/textView11"
