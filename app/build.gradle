@@ -60,4 +60,6 @@ dependencies {
 
     // implementation of spinkit
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    // adding recyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
 }

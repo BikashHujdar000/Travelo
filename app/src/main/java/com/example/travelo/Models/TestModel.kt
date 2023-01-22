@@ -1,8 +1,6 @@
 package com.example.travelo.Models
 
 data class TestModel(
-
-    var id :Int ?= null,
     var bus_name: String,
     var initail_time : String,
     var destination_time :String,
