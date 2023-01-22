@@ -1,5 +1,6 @@
 package com.example.travelo.Fragments
 
+import android.opengl.Visibility
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 import com.example.travelo.Adapters.TestAdapterUsers
 import com.example.travelo.Models.TestModel
 import com.example.travelo.R
@@ -35,7 +35,7 @@ lateinit var recyclerView:RecyclerView
 
         manualData.add(TestModel("Nepali YataYat","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
 
-        manualData.add(TestModel("Nepali YataYat","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Suhani Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
         manualData.add(TestModel("DudhKoshi Travel ","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
         manualData.add(TestModel("Narsingh Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
         manualData.add(TestModel("MidNight Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
@@ -54,18 +54,45 @@ lateinit var recyclerView:RecyclerView
         //      }
         //    })
 
+        val state = IntArray(1)
+
         recyclerView.addOnScrollListener((object :RecyclerView.OnScrollListener(){
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
+
+                state[0]= newState;
+
+
+
 
             }
 
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
+
+                if(dy>0 && (state[0]==0 || state[0]==2))
+                    {
+                        hideLayout()
+                    }
+                else if (dy < -10){
+                    showLayout()
+                }
+                else
+                {
+                    showLayout()
+                }
             }
         }))
 
         return binding.root
+    }
+
+    private fun showLayout() {
+        binding.toolbarType.visibility = View.VISIBLE
+    }
+
+    private fun hideLayout() {
+        binding.toolbarType.visibility=View.INVISIBLE
     }
 
 
