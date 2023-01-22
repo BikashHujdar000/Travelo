@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:id="@+id/toolbar_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="0dp">
 
@@ -50,20 +51,19 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/search_container_layout"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:layout_marginTop="16dp"
             android:background="@drawable/seraching_background"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar_type"
-            tools:layout_editor_absoluteX="-11dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_type">
 
             <ImageView
                 android:id="@+id/from"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="16dp"
-
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/initial_location"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -73,7 +73,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="28dp"
                 android:src="@drawable/final_state"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/from" />
@@ -85,6 +85,7 @@
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/light"
                 android:text="From"
+                android:textSize="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/from"
                 app:layout_constraintStart_toEndOf="@+id/from"
                 app:layout_constraintTop_toTopOf="@+id/from"
@@ -93,11 +94,11 @@
             <EditText
                 android:id="@+id/editTextTextPostalAddress"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:ems="10"
                 android:hint="Your location"
+                android:textSize="15dp"
                 android:inputType="textPostalAddress"
-                android:textColor="@color/black"
                 android:theme="@style/MyEditTextTheme"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView9"
@@ -110,6 +111,7 @@
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/light"
                 android:text="To"
+                android:textSize="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView5"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toTopOf="@+id/imageView5" />
@@ -117,8 +119,9 @@
             <EditText
                 android:id="@+id/editTextTextPostalAddress2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:ems="10"
+                android:textSize="15dp"
                 android:hint="Your destination"
                 android:inputType="textPostalAddress"
                 android:textColor="@color/black"
@@ -130,8 +133,8 @@
             <LinearLayout
                 android:layout_width="15dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toTopOf="@+id/imageView5"
@@ -164,26 +167,26 @@
                     android:layout_marginTop="5dp"
                     android:background="#A2ABBA" />
 
-                <View
-                    android:layout_width="2dp"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="5dp"
-                    android:background="#A2ABBA" />
+<!--                <View-->
+<!--                    android:layout_width="2dp"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="#A2ABBA" />-->
 
-                <View
-                    android:layout_width="2dp"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="5dp"
-                    android:background="#A2ABBA" />
+<!--                <View-->
+<!--                    android:layout_width="2dp"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:background="#A2ABBA" />-->
 
 
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/image_search_view"
-                android:layout_width="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/home_search_background"
-                android:layout_height="50dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.912"
@@ -193,7 +196,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                  android:background="@drawable/travel_android_icon"
+                    android:background="@drawable/travel_android_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -227,10 +230,22 @@
             tools:layout_editor_absoluteX="1dp">
 
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/user_home_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/user_home_recycleer_item" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
