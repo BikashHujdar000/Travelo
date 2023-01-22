@@ -10,10 +10,9 @@ import androidx.navigation.NavAction
 import androidx.navigation.Navigation
 import com.example.travelo.R
 import com.example.travelo.databinding.FragmentChoiceBinding
-import com.example.travelo.databinding.FragmentHomeBinding
 
 class choiceFragment : Fragment() {
-    lateinit var binding: FragmentChoiceBinding
+    lateinit var binding:FragmentChoiceBinding
 
     @SuppressLint("SuspiciousIndentation")
     override fun onCreateView(

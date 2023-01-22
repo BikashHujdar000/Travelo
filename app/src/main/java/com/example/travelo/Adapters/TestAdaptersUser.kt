@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.travelo.R
 
 class TestAdaptersUser(val context: Context,val data: ArrayList<TestAdaptersUser>):RecyclerView.Adapter<TestAdaptersUser.MyViewHolder>(){
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view= LayoutInflater.from(context).inflate(R.layout.user_home_recycleer_item,parent,false)
         return  MyViewHolder(view)
