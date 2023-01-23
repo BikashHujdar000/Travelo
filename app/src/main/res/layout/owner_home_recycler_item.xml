@@ -15,15 +15,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036">
+        app:layout_constraintVertical_bias="0.053">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/owner_bus_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:elevation="10dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Sajha "
+            android:text="Sajha yatayat "
             android:textColor="@color/black"
             android:textSize="23sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,8 +37,8 @@
             android:id="@+id/text_from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="56dp"
             android:fontFamily="@font/poppins_bold"
             android:text="From:"
             android:textSize="18sp"
@@ -50,11 +50,12 @@
             android:layout_width="25dp"
             android:layout_height="37dp"
             android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            android:src="@drawable/dot"
+            app:layout_constraintBottom_toBottomOf="@+id/owner_bus_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView12"
-            app:layout_constraintTop_toTopOf="@+id/textView12" />
+            app:layout_constraintStart_toEndOf="@+id/owner_bus_name"
+            app:layout_constraintTop_toTopOf="@+id/owner_bus_name" />
 
         <TextView
             android:id="@+id/date"
@@ -71,7 +72,7 @@
             android:id="@+id/text_to"
             android:layout_width="34dp"
             android:layout_height="34dp"
-            android:layout_marginEnd="68dp"
+            android:layout_marginEnd="4dp"
             android:fontFamily="@font/poppins_bold"
             android:text="To:"
             android:textColor="@color/black"
@@ -79,32 +80,32 @@
             app:layout_constraintBottom_toBottomOf="@+id/place_from"
             app:layout_constraintEnd_toStartOf="@+id/place_to"
             app:layout_constraintTop_toTopOf="@+id/place_from"
-            app:layout_constraintVertical_bias="0.909" />
+            app:layout_constraintVertical_bias="0.222" />
 
         <EditText
             android:id="@+id/place_to"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="68dp"
+            android:layout_marginEnd="56dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="Kathmandu"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/place_from"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/place_from"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <EditText
             android:id="@+id/place_from"
-            android:layout_width="107dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="52dp"
+            android:layout_width="112dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="44dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="kakarvitta"
             android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/text_from"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
             tools:ignore="TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

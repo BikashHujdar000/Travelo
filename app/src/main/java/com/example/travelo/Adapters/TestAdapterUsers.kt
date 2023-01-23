@@ -26,7 +26,7 @@ class TestAdapterUsers(var context: Context,var list :ArrayList<TestModel>):Recy
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-    val view = LayoutInflater.from(context).inflate(R.layout.user_home_recycleer_item,parent,false)
+    val view =LayoutInflater.from(context).inflate(R.layout.user_home_recycleer_item,parent,false)
         return MyViewHolder(view)
     }
 
