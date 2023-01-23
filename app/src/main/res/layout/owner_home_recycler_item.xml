@@ -43,8 +43,6 @@
             android:text="From:"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/place_from"
-            app:layout_constraintHorizontal_bias="0.216"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -52,11 +50,11 @@
             android:layout_width="25dp"
             android:layout_height="37dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/dots"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView12"
-            tools:layout_editor_absoluteY="20dp" />
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
 
         <TextView
             android:id="@+id/date"
@@ -77,8 +75,9 @@
             android:text="To:"
             android:textColor="@color/black"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="182dp"
-            tools:layout_editor_absoluteY="58dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/place_from"
+            app:layout_constraintEnd_toStartOf="@+id/place_to"
+            app:layout_constraintTop_toTopOf="@+id/place_from" />
 
         <EditText
             android:id="@+id/place_to"
@@ -87,8 +86,9 @@
             android:fontFamily="@font/poppins_regular"
             android:hint="Kathmandu"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="216dp"
-            tools:layout_editor_absoluteY="50dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/place_from"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/place_from" />
 
         <EditText
             android:id="@+id/place_from"
@@ -97,8 +97,9 @@
             android:fontFamily="@font/poppins_regular"
             android:hint="kakarvitta"
             android:textSize="18sp"
-            tools:layout_editor_absoluteX="69dp"
-            tools:layout_editor_absoluteY="56dp" />
+            app:layout_constraintStart_toEndOf="@+id/text_from"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

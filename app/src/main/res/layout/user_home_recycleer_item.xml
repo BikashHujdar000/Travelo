@@ -63,10 +63,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-<<<<<<< HEAD
-                android:textStyle="bold"
-=======
->>>>>>> 92af996f1ff9ee987bb0186e50b5e15d1a473f44
                 android:fontFamily="@font/medium"
                 android:text="Rs.200"
                 android:textColor="#01031D"

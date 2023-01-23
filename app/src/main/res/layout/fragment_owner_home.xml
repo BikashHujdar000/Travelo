@@ -31,17 +31,22 @@
             android:layout_height="44dp"
             android:background="@drawable/circular_background"
             android:src="@drawable/ic_baseline_notifications_24"
-            tools:layout_editor_absoluteX="352dp"
-            tools:layout_editor_absoluteY="17dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/tv_title" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="44dp"
             android:layout_height="45dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
             android:background="@drawable/circular_background"
             android:src="@drawable/ic_baseline_person_24"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="293dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+            app:layout_constraintStart_toEndOf="@+id/tv_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_title"
+            app:layout_constraintVertical_bias="0.529" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="407dp"
