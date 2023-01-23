@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:elevation="10dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Sajha yatayat"
+            android:text="Sajha "
             android:textColor="@color/black"
             android:textSize="23sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -71,29 +71,35 @@
             android:id="@+id/text_to"
             android:layout_width="34dp"
             android:layout_height="34dp"
+            android:layout_marginEnd="68dp"
             android:fontFamily="@font/poppins_bold"
             android:text="To:"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/place_from"
             app:layout_constraintEnd_toStartOf="@+id/place_to"
-            app:layout_constraintTop_toTopOf="@+id/place_from" />
+            app:layout_constraintTop_toTopOf="@+id/place_from"
+            app:layout_constraintVertical_bias="0.909" />
 
         <EditText
             android:id="@+id/place_to"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="68dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="Kathmandu"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/place_from"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/place_from" />
+            app:layout_constraintTop_toTopOf="@+id/place_from"
+            app:layout_constraintVertical_bias="0.0" />
 
         <EditText
             android:id="@+id/place_from"
             android:layout_width="107dp"
             android:layout_height="45dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="52dp"
             android:fontFamily="@font/poppins_regular"
             android:hint="kakarvitta"
             android:textSize="18sp"
