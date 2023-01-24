@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.example.travelo'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.travelo"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
 
         versionCode 1
         versionName "1.0"
@@ -44,22 +44,27 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //fragment dependency
     def nav_version = "2.3.2"
     implementation('androidx.fragment:fragment-ktx:1.5.5')
+    //noinspection GradleDependency
     implementation "androidx.navigation:navigation-fragment:$nav_version"
+    //noinspection GradleDependency
     implementation "androidx.navigation:navigation-ui:$nav_version"
 
     // implementation of spinkit
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     // adding recyclerView
-    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    //library for bottom navigation bar
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
 }

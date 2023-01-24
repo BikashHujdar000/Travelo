@@ -44,6 +44,8 @@ lateinit var recyclerView:RecyclerView
        val adapter= TestAdapterUsers(requireContext(),manualData)
          recyclerView.adapter=adapter
         recyclerView.layoutManager= LinearLayoutManager(requireContext())
+
+
      //recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
         //      override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
         //        super.onScrollStateChanged(recyclerView, newState)
@@ -67,21 +69,23 @@ lateinit var recyclerView:RecyclerView
 
             }
 
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                super.onScrolled(recyclerView, dx, dy)
+//            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+//                super.onScrolled(recyclerView, dx, dy)
+//
+//                if(dy>0 && (state[0]==0 || state[0]==2))
+//                    {
+//                        hideLayout()
+//                    }
+//                else if (dy < -10){
+//                    showLayout()
+//                }
+//                else
+//                {
+//                    showLayout()
+//                }
+//            }
 
-                if(dy>0 && (state[0]==0 || state[0]==2))
-                    {
-                        hideLayout()
-                    }
-                else if (dy < -10){
-                    showLayout()
-                }
-                else
-                {
-                    showLayout()
-                }
-            }
+
         }))
 
         return binding.root
