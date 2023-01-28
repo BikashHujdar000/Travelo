@@ -65,11 +65,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="16dp"
-<<<<<<< HEAD
-                android:layout_marginTop="10dp"
-=======
                 android:layout_marginTop="8dp"
->>>>>>> 4d4c744a02b54afa2e1704c617dcad8254a2d331
                 android:src="@drawable/initial_location"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -172,18 +168,6 @@
                     android:layout_height="2dp"
                     android:layout_marginTop="5dp"
                     android:background="#A2ABBA" />
-
-<!--                <View-->
-<!--                    android:layout_width="2dp"-->
-<!--                    android:layout_height="2dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:background="#A2ABBA" />-->
-
-<!--                <View-->
-<!--                    android:layout_width="2dp"-->
-<!--                    android:layout_height="2dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:background="#A2ABBA" />-->
 
 
             </LinearLayout>
