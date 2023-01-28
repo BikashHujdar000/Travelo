@@ -37,9 +37,6 @@
         <action
             android:id="@+id/action_userLoginFragment_to_userRegisterFragment"
             app:destination="@id/userRegisterFragment" />
-        <action
-            android:id="@+id/action_userLoginFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/userRegisterFragment"
@@ -50,11 +47,6 @@
             android:id="@+id/action_userRegisterFragment_to_userLoginFragment"
             app:destination="@id/userLoginFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.travelo.Fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/ownerHomeFragment"
         android:name="com.example.travelo.Fragments.OwnerHomeFragment"

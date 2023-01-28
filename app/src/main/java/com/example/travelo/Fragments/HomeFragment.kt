@@ -40,6 +40,21 @@ lateinit var recyclerView:RecyclerView
         manualData.add(TestModel("Narsingh Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
         manualData.add(TestModel("MidNight Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
         manualData.add(TestModel("Ramro Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Nepali YataYat","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+
+        manualData.add(TestModel("Suhani Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("DudhKoshi Travel ","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Narsingh Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("MidNight Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Ramro Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Nepali YataYat","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+
+        manualData.add(TestModel("Suhani Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("DudhKoshi Travel ","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Narsingh Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("MidNight Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+        manualData.add(TestModel("Ramro Travel","1:00pm","3:00","direct","Dharan","Gaighat","Rs.400","200Km"))
+
 
        val adapter= TestAdapterUsers(requireContext(),manualData)
          recyclerView.adapter=adapter
