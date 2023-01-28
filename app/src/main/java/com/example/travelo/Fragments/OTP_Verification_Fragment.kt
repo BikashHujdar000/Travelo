@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.core.widget.doOnTextChanged
 import com.example.travelo.R
@@ -23,7 +24,11 @@ class OTP_Verification_Fragment : Fragment() {
         binding = FragmentOTPVerificationBinding.inflate(layoutInflater,container,false)
 
         setopOtpInput()
-        binding
+        binding.checkOtp.setOnClickListener {
+
+
+        }
+
 
 
         return binding.root

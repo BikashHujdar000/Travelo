@@ -27,7 +27,7 @@ class UserLoginFragment : Fragment() {
 
         binding = FragmentUserLoginBinding.inflate(layoutInflater,container,false)
 
-        binding.signInButton.setOnClickListener {
+        binding.signIn.setOnClickListener {
 
 //            Navigation.findNavController(it).navigate(R.id.action_userLoginFragment_to_homeFragment)
           // type 1
