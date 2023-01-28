@@ -1,9 +1,14 @@
 package com.example.travelo
 import ScrollHandler
 import android.os.Bundle
+import android.provider.ContactsContract.Profile
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.fragment.app.Fragment
+import com.example.travelo.Fragments.CompanyFragment
+import com.example.travelo.Fragments.HomeFragment
+import com.example.travelo.Fragments.ProfileFragment
 import com.example.travelo.databinding.ActivityHomeBinding
 import me.ibrahimsn.lib.SmoothBottomBar
 
@@ -17,20 +22,7 @@ class HomeActivity : AppCompatActivity() {
         binding =ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-         // setting hamdler
-        /*
-        *     spaceNavigationView = (SpaceNavigationView) findViewById(R.id.space);
-        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) spaceNavigationView.getLayoutParams();
-        layoutParams.setBehavior(new ScrollHandler());
-        spaceNavigationView.initWithSaveInstanceState(savedInstanceState);
-        *
-        *  */
-
-//        bottomBar= findViewById<View>(R.id.b) as SpaceNavigationView
-
-
-
-
+      // setting handler in  Scrollable Handler
         bottomBar = binding.bottomNavigationBar
         val layoutParams = bottomBar .layoutParams as CoordinatorLayout.LayoutParams
         layoutParams.behavior = ScrollHandler()
@@ -40,26 +32,43 @@ class HomeActivity : AppCompatActivity() {
          when(it)
          {
              0->{
-                 Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+
+             val  fragment= HomeFragment()
+                 switchFragment(fragment)
 
              }
              1->{
                  Toast.makeText(this, "Conpany", Toast.LENGTH_SHORT).show()
-
+               val fragment = CompanyFragment()
+                switchFragment(fragment)
              }
              2->{
                  Toast.makeText(this, "Location", Toast.LENGTH_SHORT).show()
+               val fragment = LocationFragment()
+                 switchFragment(fragment)
 
              }
              3->
              {
-                 Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show()
+                val fragment = ProfileFragment()
+                 switchFragment(fragment)
              }
 
          }
      }
 
     }
+    // out of on create View
+
+
+        private fun switchFragment(fragment: Fragment) {
+            var  fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.fragmentContainerView2, fragment)
+            fragmentTransaction.commit()
+        }
+
+
 }
+
 
 
