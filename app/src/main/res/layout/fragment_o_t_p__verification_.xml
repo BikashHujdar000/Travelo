@@ -1,14 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.OTP_Verification_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/white_back"
+        tools:context=".Activities.PhoneNumberActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/otp_verify" />
+
+        <TextView
+            android:id="@+id/verify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Verify Your Account "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/verify"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/verify_text"
+            app:layout_constraintStart_toStartOf="@+id/verify_text"
+            app:layout_constraintTop_toBottomOf="@+id/verify_text" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@color/white_back"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/otp1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:maxLength="1"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/otp_back"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"
+                        tools:ignore="label for"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+
+                        />
+                    <EditText
+                        android:id="@+id/otp2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:maxLength="1"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/otp_back"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"
+                        tools:ignore="label for"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+
+                        />
+                    <EditText
+                        android:id="@+id/otp3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:maxLength="1"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/otp_back"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"
+                        tools:ignore="label for"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+
+                        />
+                    <EditText
+                        android:id="@+id/otp4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:maxLength="1"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/otp_back"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"
+                        tools:ignore="label for"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+
+                        />
+                    <EditText
+                        android:id="@+id/otp5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:maxLength="1"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/otp_back"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"
+                        tools:ignore="label for"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+
+                        />
+                    <EditText
+                        android:id="@+id/otp6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:maxLength="1"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/otp_back"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="0"
+                        tools:ignore="label for"
+                        android:textColor="@color/black"
+                        android:theme="@style/MyEditTextTheme"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/check_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+
+                    android:layout_margin="30dp"
+                    android:background="@drawable/bottom_background"
+                    android:backgroundTint="@color/theme1"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="CONFIRM"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </FrameLayout>

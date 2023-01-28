@@ -24,5 +24,10 @@
     <string name="login_with">Or login with</string>
     <string name="create_accont">Create account ?</string>
     <string name="home">Home</string>
+    <string name="forget">Forgot Password ?</string>
+    <string name="forgetdown">" Enter your registered email address below to\n  reset new password "</string>
+    <string name="back">Back to Login</string>
+    <string name="otptext">Verify OTP</string>
+    <string name="verify">Enter the OTP code  sent to your email address \n to verify your account</string>
 
 </resources>

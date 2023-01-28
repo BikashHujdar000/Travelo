@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_userLoginFragment_to_userRegisterFragment"
             app:destination="@id/userRegisterFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_forgot_Password"
+            app:destination="@id/forgot_Password" />
     </fragment>
     <fragment
         android:id="@+id/userRegisterFragment"
@@ -52,4 +55,21 @@
         android:name="com.example.travelo.Fragments.OwnerHomeFragment"
         android:label="fragment_owner_home"
         tools:layout="@layout/fragment_owner_home" />
+    <fragment
+        android:id="@+id/forgot_Password"
+        android:name="com.example.travelo.Fragments.Forgot_Password"
+        android:label="fragment_forgot__password"
+        tools:layout="@layout/fragment_forgot__password" >
+        <action
+            android:id="@+id/action_forgot_Password_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_forgot_Password_to_OTP_Verification_Fragment"
+            app:destination="@id/OTP_Verification_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTP_Verification_Fragment"
+        android:name="com.example.travelo.Fragments.OTP_Verification_Fragment"
+        android:label="fragment_o_t_p__verification_"
+        tools:layout="@layout/fragment_o_t_p__verification_" />
 </navigation>

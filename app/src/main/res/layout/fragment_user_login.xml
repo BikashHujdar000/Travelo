@@ -90,7 +90,7 @@
                 android:theme="@style/MyEditTextTheme" />
 
             <TextView
-                android:id="@+id/signIn_button"
+                android:id="@+id/check_otp"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
                 android:layout_marginTop="15dp"
