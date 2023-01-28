@@ -23,5 +23,6 @@
     <string name="busownerTExt">Start sharing your bus information for Travellers</string>
     <string name="login_with">Or login with</string>
     <string name="create_accont">Create account ?</string>
+    <string name="home">Home</string>
 
 </resources>
