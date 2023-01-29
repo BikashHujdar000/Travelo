@@ -72,102 +72,94 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
+
+
                     <EditText
                         android:id="@+id/otp1"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:maxLength="1"
-                        android:imeOptions="actionNext"
-                        android:importantForAutofill="no"
                         android:layout_margin="2dp"
                         android:background="@drawable/otp_back"
                         android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:inputType="number"
-                        tools:ignore="label for"
+                        android:maxLength="1"
                         android:textColor="@color/black"
                         android:theme="@style/MyEditTextTheme"
-
-                        />
+                        tools:ignore="label for"/>
                     <EditText
                         android:id="@+id/otp2"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:maxLength="1"
-                        android:imeOptions="actionNext"
-                        android:importantForAutofill="no"
                         android:layout_margin="2dp"
                         android:background="@drawable/otp_back"
                         android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:inputType="number"
-                        tools:ignore="label for"
+                        android:maxLength="1"
                         android:textColor="@color/black"
                         android:theme="@style/MyEditTextTheme"
-
-                        />
+                        tools:ignore="label for"/>
                     <EditText
                         android:id="@+id/otp3"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:maxLength="1"
-                        android:imeOptions="actionNext"
-                        android:importantForAutofill="no"
                         android:layout_margin="2dp"
                         android:background="@drawable/otp_back"
                         android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:inputType="number"
-                        tools:ignore="label for"
+                        android:maxLength="1"
                         android:textColor="@color/black"
                         android:theme="@style/MyEditTextTheme"
-
-                        />
+                        tools:ignore="label for"/>
                     <EditText
                         android:id="@+id/otp4"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:maxLength="1"
-                        android:imeOptions="actionNext"
-                        android:importantForAutofill="no"
                         android:layout_margin="2dp"
                         android:background="@drawable/otp_back"
                         android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:inputType="number"
-                        tools:ignore="label for"
+                        android:maxLength="1"
                         android:textColor="@color/black"
                         android:theme="@style/MyEditTextTheme"
-
-                        />
+                        tools:ignore="label for"/>
                     <EditText
-                        android:id="@+id/otp5"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:maxLength="1"
-                        android:imeOptions="actionNext"
-                        android:importantForAutofill="no"
-                        android:layout_margin="2dp"
-                        android:background="@drawable/otp_back"
-                        android:gravity="center"
-                        android:inputType="number"
-                        tools:ignore="label for"
-                        android:textColor="@color/black"
-                        android:theme="@style/MyEditTextTheme"
-
-                        />
+                    android:id="@+id/otp5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/otp_back"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyEditTextTheme"
+                    tools:ignore="label for"/>
                     <EditText
                         android:id="@+id/otp6"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:maxLength="1"
-                        android:imeOptions="actionNext"
-                        android:importantForAutofill="no"
                         android:layout_margin="2dp"
                         android:background="@drawable/otp_back"
                         android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
                         android:inputType="number"
-                        tools:ignore="label for"
+                        android:maxLength="1"
                         android:textColor="@color/black"
                         android:theme="@style/MyEditTextTheme"
+                        tools:ignore="label for"/>
 
-                        />
+
 
 
 

@@ -29,5 +29,7 @@
     <string name="back">Back to Login</string>
     <string name="otptext">Verify OTP</string>
     <string name="verify">Enter the OTP code  sent to your email address \n to verify your account</string>
+    <string name="create_password">Create Password</string>
+    <string name="congrartsdown">Your otp has been verified successfully \nCreate new password now</string>
 
 </resources>

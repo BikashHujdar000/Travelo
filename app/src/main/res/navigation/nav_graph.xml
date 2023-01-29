@@ -71,5 +71,17 @@
         android:id="@+id/OTP_Verification_Fragment"
         android:name="com.example.travelo.Fragments.OTP_Verification_Fragment"
         android:label="fragment_o_t_p__verification_"
-        tools:layout="@layout/fragment_o_t_p__verification_" />
+        tools:layout="@layout/fragment_o_t_p__verification_" >
+        <action
+            android:id="@+id/action_OTP_Verification_Fragment_to_changePasssword"
+            app:destination="@id/changePasssword" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasssword"
+        android:name="com.example.travelo.Fragments.ChangePasssword"
+        android:label="ChangePasssword" >
+        <action
+            android:id="@+id/action_changePasssword_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
 </navigation>
