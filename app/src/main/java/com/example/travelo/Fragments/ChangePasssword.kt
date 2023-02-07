@@ -13,7 +13,6 @@ class ChangePasssword : Fragment() {
     lateinit var  binding:FragmentChangePassswordBinding
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

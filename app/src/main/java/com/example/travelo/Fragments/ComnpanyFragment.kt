@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.travelo.R
 
-class CompanyFragment : Fragment() {
+class ComnpanyFragment : Fragment() {
 
 
     override fun onCreateView(

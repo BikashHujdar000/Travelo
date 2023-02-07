@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/companyFragment"
-        android:name="com.example.travelo.Fragments.CompanyFragment"
+        android:name="com.example.travelo.Fragments.ComnpanyFragment"
         android:label="fragment_company"
         tools:layout="@layout/fragment_company" >
         <action

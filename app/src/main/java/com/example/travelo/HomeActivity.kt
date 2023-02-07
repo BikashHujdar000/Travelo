@@ -1,12 +1,11 @@
 package com.example.travelo
 import ScrollHandler
 import android.os.Bundle
-import android.provider.ContactsContract.Profile
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
-import com.example.travelo.Fragments.CompanyFragment
+import com.example.travelo.Fragments.ComnpanyFragment
 import com.example.travelo.Fragments.HomeFragment
 import com.example.travelo.Fragments.ProfileFragment
 import com.example.travelo.databinding.ActivityHomeBinding
@@ -23,6 +22,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
       // setting handler in  Scrollable Handler
+
         bottomBar = binding.bottomNavigationBar
         val layoutParams = bottomBar .layoutParams as CoordinatorLayout.LayoutParams
         layoutParams.behavior = ScrollHandler()
@@ -39,7 +39,7 @@ class HomeActivity : AppCompatActivity() {
              }
              1->{
                  Toast.makeText(this, "Conpany", Toast.LENGTH_SHORT).show()
-               val fragment = CompanyFragment()
+               val fragment = ComnpanyFragment()
                 switchFragment(fragment)
              }
              2->{

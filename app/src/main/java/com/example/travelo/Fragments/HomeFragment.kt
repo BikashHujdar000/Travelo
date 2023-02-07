@@ -61,60 +61,9 @@ lateinit var recyclerView:RecyclerView
         recyclerView.layoutManager= LinearLayoutManager(requireContext())
 
 
-     //recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-        //      override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-        //        super.onScrollStateChanged(recyclerView, newState)
-        //        val totalItemCount = recyclerView.layoutManager!!.itemCount
-        //        if (!imageRequester.isLoadingData && totalItemCount == lastVisibleItemPosition + 1) {
-        //          requestPhoto()
-        //        }
-        //      }
-        //    })
-
-        val state = IntArray(1)
-
-        recyclerView.addOnScrollListener((object :RecyclerView.OnScrollListener(){
-            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-                super.onScrollStateChanged(recyclerView, newState)
-
-                state[0]= newState;
-
-
-
-
-            }
-
-//            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-//                super.onScrolled(recyclerView, dx, dy)
-//
-//                if(dy>0 && (state[0]==0 || state[0]==2))
-//                    {
-//                        hideLayout()
-//                    }
-//                else if (dy < -10){
-//                    showLayout()
-//                }
-//                else
-//                {
-//                    showLayout()
-//                }
-//            }
-
-
-        }))
 
         return binding.root
     }
-
-    private fun showLayout() {
-        binding.toolbarType.visibility = View.VISIBLE
-    }
-
-    private fun hideLayout() {
-        binding.toolbarType.visibility=View.INVISIBLE
-    }
-
-
 }
 
 
