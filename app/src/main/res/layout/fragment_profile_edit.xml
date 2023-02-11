@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileEditFragment">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@color/theme1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_card"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundImage"
+        app:layout_constraintEnd_toEndOf="@id/backgroundImage"
+        app:layout_constraintStart_toStartOf="@id/backgroundImage"
+        app:layout_constraintTop_toBottomOf="@id/backgroundImage">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:src="@drawable/profiletest"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_card">
+
+        <TextView
+
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/regular"
+            android:text="Name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_background_box"
+            android:fontFamily="@font/regular"
+            android:hint=" Type your name"
+            android:padding="7dp"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <EditText
+
+            android:id="@+id/user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/hint_phone"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:background="@drawable/edittext_background_box"
+            android:textColor="@color/black"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone_text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Email"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_phone" />
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="someone@exmple.com"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:background="@drawable/edittext_background_box"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_address"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Gender"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_email" />
+
+        <CheckBox
+            android:id="@+id/male_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:text="Male"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender" />
+
+        <CheckBox
+            android:id="@+id/female_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:text="Female"
+            android:theme="@style/MyEditTextTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/male_checkBox"
+            app:layout_constraintStart_toEndOf="@+id/male_checkBox"
+            app:layout_constraintTop_toTopOf="@+id/male_checkBox"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+                    android:id="@+id/address"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/regular"
+                    android:text="Address"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/male_checkBox" />
+
+                <EditText
+                    android:id="@+id/user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_background_box"
+                    android:fontFamily="@font/regular"
+                    android:hint="Gaighat,Udayapur"
+                    android:inputType="text"
+                    android:padding="7dp"
+                    android:textColor="@color/black"
+                    android:theme="@style/MyEditTextTheme"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/address"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/update_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/user_address" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+

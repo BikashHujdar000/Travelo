@@ -1,6 +1,7 @@
 package com.example.travelo
 import ScrollHandler
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -52,6 +53,7 @@ class HomeActivity : AppCompatActivity() {
              {
                 val fragment = ProfileFragment()
                  switchFragment(fragment)
+                 bottomBar.visibility=View.GONE
              }
 
          }

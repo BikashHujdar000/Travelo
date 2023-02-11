@@ -46,6 +46,9 @@
         <action
             android:id="@+id/action_profileFragment_to_locationFragment"
             app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileEditFragment"
+            app:destination="@id/profileEditFragment" />
     </fragment>
     <fragment
         android:id="@+id/locationFragment"
@@ -61,5 +64,14 @@
         <action
             android:id="@+id/action_locationFragment_to_homeFragment2"
             app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.example.travelo.Fragments.ProfileEditFragment"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit" >
+        <action
+            android:id="@+id/action_profileEditFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
 </navigation>
