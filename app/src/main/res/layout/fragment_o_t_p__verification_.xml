@@ -158,16 +158,7 @@
                         android:textColor="@color/black"
                         android:theme="@style/MyEditTextTheme"
                         tools:ignore="label for"/>
-
-
-
-
-
-
-
                 </LinearLayout>
-
-
                 <TextView
                     android:id="@+id/check_otp"
                     android:layout_width="match_parent"
